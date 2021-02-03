@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Facebook web Test">
+
+    <parameter name="login" value="damir"></parameter>
+    <parameter name="password" value="777"></parameter>
+
+    <test name="login test">
+        <classes>
+            <class name="com.solvd.LoginTest"></class>
+        </classes>
+    </test>
+</suite>
