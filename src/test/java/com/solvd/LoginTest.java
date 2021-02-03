@@ -14,8 +14,6 @@ import java.util.concurrent.TimeUnit;
 public class LoginTest {
     private WebDriver driver;
 
-    @Parameters
-
     @BeforeTest
     public void beforeTest(){
         System.setProperty("webdriver.chrome.driver","/Users/dhrynevich/Desktop/selenium/chromedriver");
@@ -31,7 +29,7 @@ public class LoginTest {
     public void testIncorrectLogin(){
 
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login("Damir","777");
+        loginPage.login("Dima","777");
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         Assert.assertTrue(driver.findElement(By.xpath("//div[@class='_9ay7']"))!=null,
