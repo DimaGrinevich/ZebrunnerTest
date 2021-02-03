@@ -27,7 +27,7 @@
         <dependency>
             <groupId>com.zebrunner</groupId>
             <artifactId>agent-testng</artifactId>
-            <version>1.2.1</version>
+            <version>1.2.0</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
